@@ -16,7 +16,7 @@ const transactionSchema = new mongoose.Schema(
     },
     category: {
       type: String,
-      requires: [true, "Category is Required!"],
+      required: [true, "Category is Required!"],
     },
     refrence: {
       type: String,
