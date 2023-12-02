@@ -1,0 +1,83 @@
+/* login.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+* {
+  font-family: "Roboto Slab", serif;
+}
+
+.login-page {
+  background: linear-gradient(120deg, #3498db, #8e44ad); /* Apply gradient to the entire page */
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-form {
+  width: 400px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: slide-in 1s ease;
+}
+
+.login-form h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  display: block;
+  color: #444;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: "Roboto Slab", serif;
+}
+
+.login-form .btn {
+  width: 100%;
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 11px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.login-form .btn:hover {
+  background: #2980b9;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.login-form .error-message {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 10px;
+}
